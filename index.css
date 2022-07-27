@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: 'Android' ;
-    src: url('idroid.otf') format('opentype');
+    src: url('externos/idroid.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
