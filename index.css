@@ -12,6 +12,7 @@
 - aprendi que antes de fazer tudo, vc colocar todo o texto no ngc --- e separa bonitiho (nav não fica dentro do header)
 - aprendi que não precisa colocar > para indicar que é filho no css --- se vc não coloca isso vc está se referindo ao objeto da direita sendo filho em qualquer ordem  
 - aprendi a personalizar o icone das listas com o list-style-image e o tipo dela com o list-style-position 
+- quando declarar o format no font-face, coloca o item entre aspas 'opentype' ou 'truetype' 
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
