@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*MELHORIAS EM RELAÇÃO AO CÓDIGO QUE FIZ SOZINHO SEM O GUANABARA:
+/*MELHORIAS EM RELAÇÃO AO CÓDIGO QUE FIZ SOZINHO SEM O GUANABARA (v1):
 - consegui deixar responsivo usando max-width e min-width (e a técnica de position no vídeo)
 - consegui fazer umas sombras nos textos, não somente nas caixas, com o text-shadow 
 - consegui organizar a lista usando o collums --- usei outro método, mas acredito que o collums ficou melhor 
