@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid'  ;
+    src: url('idroid.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+/*Cabeçalho*/
+header {
+    background-image: linear-gradient(to bottom, #57C27D, #35754B) ;
+    padding: 10px;
+}
+
+header > h1{
+    font-size: 29px;
+    text-align: center;
+    color:white;   
+}
+
+header > p{
+    text-align: center;
+    font-size: 12px; 
+    color:white;
+}
+
+header > nav > a.link_superior{
+    display: inline-block; /*torna a tag "a" (inline-level) em box level*/
+    margin: 5px;
+    font-size: medium;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}  
+
+header > nav > a.link_superior:hover{
+    background-color: rgba(255, 255, 255, 0.288);
+    text-decoration: underline;
+} 
+
+
+/* Texto Principal*/
+body {
+    margin: 0px; /*centraliza a caixa (modelo de caixas)*/
+    background-color: rgb(110, 207, 135);
+}
+
+main{
+    height: 2500px;
+    width: 800px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.993);
+    padding: 10px;
+    box-shadow: 0px 20px 20px 0px;
+}
+
+main > h1 {
+    font-family:'idroid';
+    font-size: 2em;
+    font-weight:  bold;
+    color:rgb(34, 114, 54)
+}
+
+main > h2{
+    background-image: linear-gradient(to right , rgb(148, 224, 148) , white);
+    border: auto;
+    font-size: 20px;
+    color:rgb(34, 114, 54);
+    font-family: 'idroid';
+}
+
+.imagens{
+    text-align:center;
+}
+
+.link_texto {
+    font-weight: bold;
+    background-color: rgb(166, 221, 166);
+    text-decoration: none;
+    color: green;
+}
+
+.link_texto:hover{
+    text-decoration: underline;
+}
+
+
+/*Vídeo*/
+.video{
+    text-align: center;
+    background-color: rgb(12, 34, 12);
+    padding: 30px;
+    margin-inline:-10px;  
+}
+
+/*Texto Extra*/
+.titulo_extra{
+    width: 770px;
+    height: 18px;
+    margin: 4px;
+    margin-bottom: -6px;
+    background-color: rgb(55, 129, 63);
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: medium;
+}
+
+.extra{
+    width: 770px;
+    height: 400px;
+    background-color: rgb(148, 224, 148);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 4px;
+    font-size: medium;
+}
+
+.lista{
+    display: inline-block;
+}
+
+
+abbr{
+    text-decoration: underline;
+}
+
+
+ul{
+    list-style-image: url("https://www.imagensanimadas.com/data/media/111/seta-imagem-animada-0192.gif");
+    list-style-position: inside;
+}
+
+/*Rodapé*/
+footer{
+    background-color: rgb(2, 59, 2);
+    color:white;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: -16px;
+    background-size: cover ;
+}
+
+

@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+/*MELHORIAS EM RELAÇÃO AO CÓDIGO QUE FIZ SOZINHO SEM O GUANABARA:
+- consegui deixar responsivo usando max-width e min-width (e a técnica de position no vídeo)
+- consegui fazer umas sombras nos textos, não somente nas caixas, com o text-shadow 
+- consegui organizar a lista usando o collums --- usei outro método, mas acredito que o collums ficou melhor 
+- apredi a usar fontes externas baixadas (@import) e sem baixar (@font-face) 
+- aprendi a declarar variáveis no css , deixa realmente tudo mais organizado 
+- aprendi a zerar as configurações padrões do site com o * 
+- aprendi o line-height --- para deixar os espaços entre as linhas mais espaçados 
+- apredia técnica de centralizar blocos ---- margin auto --- mas o cara tem que ser bloco ent usar o display block 
+- aprendi que antes de fazer tudo, vc colocar todo o texto no ngc --- e separa bonitiho (nav não fica dentro do header)
+- aprendi que não precisa colocar > para indicar que é filho no css --- se vc não coloca isso vc está se referindo ao objeto da direita sendo filho em qualquer ordem  
+- aprendi a personalizar o icone das listas com o list-style-image e o tipo dela com o list-style-position 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android' ;
+    src: url('idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px
+}
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue' , cursive;
+    --fonte2: 'Android', cursive;
+}
+
+body {
+    line-height: 2.0em;
+    background-color: var(--cor0);
+    font-family: var(--fonte0)
+}
+
+
+header{
+    background-image: linear-gradient(to bottom , var(--cor1), var(--cor4) );
+    text-shadow: 0px 0px 1px var(--cor0);
+    color: white;
+    text-align: center;
+    min-height: 150px;
+    margin: auto;
+}
+
+header   h1{
+    font-family: var(--fonte1);
+    font-size: 2.5em;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    text-shadow: 1px 6px 3px black;
+    
+}
+
+header p {
+    font-size: 0.8em;
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 20px;
+    padding: 10px;
+    text-shadow: 2px 3px 3px black;
+}
+
+nav{
+    padding-left: 10px;
+    background-color: var(--cor4);
+    padding-bottom: 10px;
+}
+
+nav a{
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition-duration: .5s;
+    max-width: 200px;
+}
+
+nav a:hover{
+    background-color: var(--cor1);
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    margin:auto;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ; /*não existe um so com bottom*/
+    padding:15px;
+    max-width: 1000px;
+    min-width:300px;
+    box-shadow:0px 0px 10px black;
+}
+
+main img{
+    width: 100%
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;  /*a centralização com o margin auto so funciona quando o cara é block */
+}
+
+main  article  h1{
+    font-family: var(--fonte2);
+    color: var(--cor4);
+    font-size: 30px;
+}
+main  article  h2{
+    font-family: var(--fonte2);
+    background-image: linear-gradient(to right, var(--cor1) , transparent); /*em vez de colocar white coloca transparent, se o cara quiser mudar a cor do main fudeu */
+    font-size: 25px;
+    color: var(--cor4) 
+}
+
+main p{
+    margin:15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    padding-right: 20px;
+}
+
+.nomes{
+    color:var(--cor4);
+    background-color: var(--cor1);
+    font-weight: bold;
+    text-decoration: none;
+}
+.nomes:hover{
+    text-decoration: underline;
+}
+
+div.video{
+    background-color: #063d1e;
+    padding: 30px;
+    margin-inline: -15px;  /* geralmente é 10 do article e 10 do main ---- entre 15 a 20px */
+    margin-bottom: 10px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video  iframe{
+    position: absolute; /*quando a gente deixa um elemento pai com position relative e o filho como position absolute, as instruções dadas ao filho são baseadas no pai*/
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 20px 0px black;
+}
+aside h4{
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+
+}
+aside ul {
+    list-style-position: inside;
+    list-style-image: url("https://www.imagensanimadas.com/data/media/111/seta-imagem-animada-0192.gif");
+    columns: 2; /*quando eu fiz, fiz dois ul e usei o diplay inline block, mas o collums é específico para as listas e fica mais bonito*/
+    padding-left: 10px;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
