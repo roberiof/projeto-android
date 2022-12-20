@@ -1,6 +1,5 @@
 # projeto-android
 Meu primeiro mini-projeto. Uma página informacional simples e responsiva!  👀
-<br>
 Ajuda do grande professor Guanabara do CursoEmVideo. 
 
 <a href="https://roberiof.github.io/projeto-android/index.html"> Ir para o site </a>
